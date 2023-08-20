@@ -98,6 +98,16 @@ def Take_query():
                 today=str(datetime.datetime.now()) 
                 speak(today[0:11]) 
                 m_label.config(text=today[0:11]) 
+        elif 'suffering from fever' in query: 
+                speak('you can take paracetamol or aspirin thank you') 
+                m_label.config(text='you can take paracetamol or aspirin thank you') 
+ 
+        elif 'suffering from headache' in query: 
+                speak('you can take disprin Thank you') 
+                m_label.config(text='you can take disprin Thank you') 
+ 
+        elif 'hello' in query: 
+            wishme() 
 
 
         elif "from wikipedia" in query: 
